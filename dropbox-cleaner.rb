@@ -5,9 +5,10 @@ class DropboxCleaner < Formula
   sha256 "df6f22626d401f21cf4d72fdadbff761ca11676f921e174411caaec55ea7afbb"
 
   def install
-    bin.install "dp-cleaner"
+    bin.install "dropbox-cleaner"
   end
 
   test do
+    system "#{bin}/dropbox-cleaner"#, "--version"
   end
 end
